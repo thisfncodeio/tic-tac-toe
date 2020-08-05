@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="container">
+		<div id="root"></div>
+		<div>
+			<p>Click a player name to enter your name or leave it as the default.</p>
+			<div class="players">
+				<div class="player"><input type="text" value="Player1" id="player1"> <span></span></div>
+				<div class="player"><input type="text" value="Player2" id="player2"> <span></span></div>
+			</div>
+		</div>
+		<div class="controls">
+			<button id="selectPlayer" onclick="eventHandlers.selectPlayer(); this.onclick=null;">X goes first!</button>
+			<button id="restartGame" onclick="eventHandlers.restartGame();">Restart</button>
+		</div>
+	</div>
+	<script src="scripts.js"></script>
+</body>
+
+</html>
