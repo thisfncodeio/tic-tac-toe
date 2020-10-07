@@ -32,20 +32,22 @@
 div p {
 	max-width: 300px;
 	text-align: center;
-	margin: 0 auto;
+	margin: 20px auto;
 }
 
 .players {
 	display: flex;
-	max-width: 500px;
 	height: 120px;
 	margin-top: 25px;
+	width: 300px;
 }
 
 .player {
+	align-items: center;
+	border: 1px dashed;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	padding: 10px;
 }
 
 .player input {
@@ -53,13 +55,18 @@ div p {
 	border: none;
 	outline: none;
 	text-align: center;
-	text-decoration: underline;
 	width: 100%;
+	background-color: rgb(220, 255, 243);
 }
 
 .player span {
 	font-size: 3rem;
 	font-family: sans-serif;
+}
+
+.selected {
+	background-color: yellow;
+	font-weight: bold;
 }
 
 .controls {
@@ -73,5 +80,4 @@ button {
 	margin-bottom: 10px;
 	font-size: 1.5rem;
 	padding: 5px;
-
 }
